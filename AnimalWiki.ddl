@@ -47,4 +47,4 @@ ALTER TABLE Postagem_Definicao ADD CONSTRAINT FKPostagem_D618805 FOREIGN KEY (de
 ALTER TABLE Foto ADD CONSTRAINT FKFoto981367 FOREIGN KEY (localizacao_id) REFERENCES Localizacao (localizacao_id);
 ALTER TABLE Localizacao ADD CONSTRAINT FK_Localizacao_Estado FOREIGN KEY (estado_id) REFERENCES Estado (estado_id);
 ALTER TABLE Localizacao ADD CONSTRAINT FK_Localizacao_Municipio FOREIGN KEY (municipio_id) REFERENCES Municipio (municipio_id);
-ALTER TABLE Municipio ADD CONSTRAINT FK_Estado_Municipio FOREIGN KEY (estado_id) REFERENCES Estado (estado_id);
+ALTER TABLE Municipio ADD CONSTRAINT FKMunicipio720019 FOREIGN KEY (estado_id) REFERENCES Estado (estado_id);
