@@ -104,6 +104,8 @@ insert into postagem values ('6c681b0e-3f98-bb08-98c0-7d2cbadeadec', null, 'c5f0
 insert into postagem values ('d1cb85f7-940c-3231-5562-b379bb93830c', null, '88e606c3-9ccb-e170-608f-ed2befa049ef', '65b74200-f86b-e96a-5112-3bb7a7a2b494');
 insert into postagem values ('6bf51779-2d52-56f0-451a-d9a01f5fa8d7', null, '82ac48d2-0be5-841a-d40a-329e58fe8554', '65b74200-f86b-e96a-5112-3bb7a7a2b494');
 
+commit
+
 rollback
 
 select * from postagem
