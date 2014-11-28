@@ -13,8 +13,10 @@ create trigger animal_trigger
 before delete on animal 
 for each row execute procedure deletar_todas_fotos_quando_animal_deletado();
 
-insert into Animal values (uuid_in(md5(random()::text || now()::text)::cstring), 'cachorro legal', 'cachorro')
-insert into Animal values (uuid_in(md5(random()::text || now()::text)::cstring), 'gato legal', 'gato')
+insert into Animal values ('a5bc8f4e-5f4b-8a01-2f38-439b347ef9a6', 'cachorro legal', 'cachorro')
+insert into Animal values ('6deefcdd-b265-cb83-5977-2fe0d23a64fc', 'gato legal', 'gato')
+insert into Animal values ('fe4a4670-2ac9-622b-9566-e2c47b16a336', 'cobra legal', 'cobra')
+insert into Animal values ('b5133539-2de9-3f30-927b-b130ca9b90ae', 'aruarana legal', 'aruarana')
 
 insert into foto values(
         uuid_in(md5(random()::text || now()::text)::cstring),

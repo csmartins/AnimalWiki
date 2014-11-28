@@ -19,15 +19,6 @@ create or replace function criar_mapa_ocorrencias(animal varchar(255)) returns v
 '
 language plpgsql;
 
-create table mapa_ocorrencias 
-(
-        animal varchar(255),
-        estado varchar(255),
-        municipio varchar(255),
-        quantidadeAnimal int
-)
-
-alter table mapa_ocorrencias add primary key(animal, estado, municipio)
 select * from animal
 select * from mapa_ocorrencias
 
